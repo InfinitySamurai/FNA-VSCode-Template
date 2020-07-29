@@ -14,7 +14,7 @@
 	</PropertyGroup>
 	
     <UsingTask TaskName="MonoGame.Build.Tasks.CollectContentReferences" 
-		AssemblyFile="\Library\Frameworks\MonoGame.framework\v3.0\MonoGame.Build.Tasks.dll" />
+		AssemblyFile="C:\Program Files (x86)\MSBuild\MonoGame\v3.0\MonoGame.Build.Tasks.dll" />
 	
 	<!-- Add MonoGameContentReference to item type selection in Visual Studio -->
 	<ItemGroup>
