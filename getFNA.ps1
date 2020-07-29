@@ -27,7 +27,7 @@ function checkMsbuild ()
 
 function check7zip ()
 {
-    if ((Test-Path "C:\Program Files\7-Zip") -eq 0)
+    if ((Test-Path "D:\Programs\7-Zip") -eq 0)
     {
         Write-Output "ERROR: 7zip is not installed, please install 7zip and try again."
         exit
@@ -83,10 +83,10 @@ function getLibs ()
     check7zip
     if ((Test-Path "${PSScriptRoot}\fnalibs") -eq 0)
     {
-        & "C:\Program Files\7-Zip\7z.exe" x "fnalibs.tar.bz2"
+        & "D:\Programs\7-Zip\7z.exe" x "fnalibs.tar.bz2"
         if ($? -eq 1){ Remove-Item "fnalibs.tar.bz2"} 
         else { Write-Output "ERROR: Unable to decompress successfully." exit }
-        & "C:\Program Files\7-Zip\7z.exe" x "fnalibs.tar" -ofnalibs
+        & "D:\Programs\7-Zip\7z.exe" x "fnalibs.tar" -ofnalibs
         if ($? -eq 1)
         {  
             Remove-Item "fnalibs.tar" 
