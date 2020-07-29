@@ -8,7 +8,7 @@
 		<MonoGameInstallDirectory
 			Condition=" '$(MonoGameInstallDirectory)' == '' And Exists('/Library/Frameworks/Mono.framework/External/xbuild/MonoGame/v3.0/MonoGame.Common.props') ">/Library/Frameworks/Mono.framework/External/xbuild</MonoGameInstallDirectory>
     	<MonoGameInstallDirectory
-			Condition=" '$(MonoGameInstallDirectory)' == '' ">$(MSBuildProgramFiles32)</MonoGameInstallDirectory>
+			Condition=" '$(MonoGameInstallDirectory)' == '' ">C:\Program Files (x86)\MSBuild</MonoGameInstallDirectory>
 		<ContentOutputDir>bin/DesktopGL</ContentOutputDir>
 		<ContentIntermediateDir>obj/DesktopGL</ContentIntermediateDir>
 	</PropertyGroup>
